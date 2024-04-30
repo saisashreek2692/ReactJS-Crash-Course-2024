@@ -1,18 +1,15 @@
-
+import Card from "./Projects/Card";
+import CounterApp from "./Projects/CounterApp";
 
 function App() {
-
-  let counter = 15;
-
   return (
     <>
-      <h1>React Course {counter}</h1>
-      <h2>Counter Value: {counter}</h2>
-      <button>Add Counters</button>
-      <button>Remove Counters</button>
-      <p>Footer: {counter}</p>
+      <CounterApp />
+      <Card userName="Sai Sashreek D" post="Front End Developer" />
+      <Card />
+      <Card />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
