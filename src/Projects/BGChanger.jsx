@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Menu from "../UIUX/Menubar";
 
 const BGChanger = () => {
   const [color, setColor] = useState("olive");
@@ -9,6 +10,7 @@ const BGChanger = () => {
 
   return (
     <div>
+      <Menu />
       <h1 className="bg-cyan-600 text-white text-3xl text-center p-2">
         A BG Changer App with Vite
       </h1>
