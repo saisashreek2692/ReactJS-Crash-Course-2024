@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
-const Card = ({ userName = "SSD", post = "Engineer" }) => {
+const Card = ({ userName = "SSD", post = "Engineer", imgSrc }) => {
   // console.log(props);
   return (
     <>
-      <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+      <figure className="mx-auto m-10 md:flex bg-slate-100 rounded-xl p-10 md:p-0 dark:bg-slate-800">
         <img
           className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto"
-          src="https://images.pexels.com/photos/2182863/pexels-photo-2182863.jpeg?auto=compress&cs=tinysrgb&w=600"
+          src={imgSrc}
           alt=""
           width="384"
           height="512"
