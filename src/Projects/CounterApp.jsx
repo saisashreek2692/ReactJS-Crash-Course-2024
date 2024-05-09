@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import Menu from "../UIUX/Menubar";
 
 const CounterApp = () => {
   const [counter, setCounter] = useState(0);
@@ -23,7 +22,6 @@ const CounterApp = () => {
 
   return (
     <>
-      <Menu />
       <div className="m-20 flex flex-col justify-center items-center gap-4">
         <div className="flex flex-row justify-center items-center gap-4 m-4">
           <h1 className="text-2xl text-cyan-500 font-medium">
