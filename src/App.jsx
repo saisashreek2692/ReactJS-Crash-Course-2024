@@ -1,14 +1,18 @@
+import BGChanger from "./Projects/BGChanger";
 import Card from "./Projects/Card";
 import CounterApp from "./Projects/CounterApp";
 
+import { Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <>
-      <CounterApp />
-      <Card userName="Sai Sashreek D" post="Front End Developer" />
-      <Card />
-      <Card />
-    </>
+    <Routes>
+      <Route path="/" element={<CounterApp />} />
+
+      <Route path="/cards" element={<Card />} />
+
+      <Route path="/bgchange" element={<BGChanger />} />
+    </Routes>
   );
 }
 
