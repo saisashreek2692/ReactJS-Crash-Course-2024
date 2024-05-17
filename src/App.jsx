@@ -6,6 +6,7 @@ import CounterApp from "./Projects/CounterApp";
 import Password from "./Projects/Password";
 import Currency from "./Projects/CurrencyCoverter";
 import Contextapp from "./Projects/Contextapp";
+import ToogleTheme from "./Projects/ToogleTheme";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/pwd" element={<Password />} />
           <Route path="/currency" element={<Currency />} />
           <Route path="/context" element={<Contextapp />} />
+          <Route path="/toggle" element={<ToogleTheme />} />
         </Routes>
       </div>
     </>
